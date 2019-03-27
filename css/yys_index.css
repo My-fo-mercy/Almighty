@@ -1,0 +1,342 @@
+@charset 'utf-8';
+body {
+    font-size: 12px;
+}
+
+.container {
+    width: 1154px;
+    height: 120px;
+    padding: 0;
+}
+
+nav {
+    border-bottom: 1px solid #eaeaea;
+}
+
+#gamelist {
+    width: 1154px;
+    height: 30px;
+}
+
+#gamelist .listdiv {
+    float: left;
+    padding-left: 6px;
+    margin-top: 7px;
+    height: 23px;
+    z-index: 20;
+}
+
+nav .user-entry {
+    position: relative;
+}
+
+#gamelist a {
+    text-decoration: none;
+}
+
+#gamelist .listdiv .listspan:hover {
+    color: #fc5600
+}
+
+#gamelist .listspan {
+    color: black;
+    width: 36px;
+    height: 16px;
+}
+
+#gamelist .listi {
+    font-size: 7px;
+    color: #333;
+}
+
+.topbar-drop {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #eaeaea;
+    border-top: none;
+    background: #fff;
+    padding: 0 0px 3px 12px;
+    width: 110px;
+    position: absolute;
+    top: 24px;
+    left: -6px;
+    /* display: none; */
+    z-index: 10;
+}
+
+.topbar-drop li {
+    margin-top: 10px;
+}
+
+.topbar-drop a {
+    color: #333;
+}
+
+.topbar-drop a:hover {
+    color: #fc5600
+}
+
+nav .welcome {
+    margin-left: 48px;
+    display: block;
+    float: left;
+    line-height: 30px;
+}
+
+nav .welcome a {
+    margin-left: 18px;
+    color: #333;
+}
+
+nav .welcome a:hover {
+    color: #fc5600
+}
+
+nav .sub-link .user-entry {
+    width: 85px;
+}
+
+nav .sub-link {
+    float: right;
+    color: #999;
+    line-height: 14px;
+}
+
+nav .sub-link span {
+    padding: 0 9px;
+    line-height: 14px;
+    float: left;
+    padding-top: 9px;
+    height: 21px;
+}
+
+nav .sub-link span a {
+    color: #333;
+}
+
+nav .sub-link span a:hover {
+    color: #fc5600
+}
+
+nav .sub-link .c_Highlight a {
+    color: #fc5600
+}
+
+nav .sub-link .topbar-drop {
+    position: absolute;
+    top: 31px;
+}
+
+nav .user-entry:hover .head {
+    display: block;
+}
+
+
+/* 搜索 */
+
+.container-top {
+    height: 120px;
+}
+
+.container-top .row {
+    height: 120px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.container-top .row2 {
+    width: 775px;
+    float: right;
+    height: 80px;
+    position: relative;
+    margin-top: 20px;
+}
+
+#product_keywords {
+    color: rgb(113, 113, 113);
+    border: 1px solid #eaeaea;
+    padding: 4px 6px;
+    line-height: 22px;
+    float: left;
+    width: 132px;
+    margin-left: 6px;
+    box-sizing: content-box;
+}
+
+.container-top .i_btn_search {
+    border: 1px solid #eaeaea;
+    height: 32px;
+    padding: 4px 0;
+    width: 32px;
+    display: block;
+    text-align: center;
+    margin: 0 0 0 -1px;
+    float: left;
+}
+
+.glyphicon-search {
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+}
+
+#enter_shopping_cart {
+    border: 1px solid #eaeaea;
+    padding: 6px 9px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    line-height: 16px;
+    text-decoration: none;
+    color: #333;
+}
+
+#enter_shopping_cart:hover {
+    color: #fc5600
+}
+
+.glyphicon-shopping-cart {
+    font-size: 14px;
+    margin-right: 5px;
+    color: #fc5600
+}
+
+#cart_num {
+    color: #fc5600
+}
+
+
+/* 搜索 */
+
+
+/* 内容 */
+
+#bgcl {
+    width: 100%;
+    overflow: hidden;
+}
+
+#bgcl img {
+    margin: 0 auto;
+    display: block;
+}
+
+.bgcl1 {
+    background: url(../index_img/banner_bg.jpg) no-repeat top center;
+}
+
+#bgcl {
+    background: url(../index_img/box_bg.jpg) no-repeat center 542px;
+}
+
+
+/* 内容 */
+
+
+/* 底部 */
+
+footer .service {
+    width: 1154px;
+    overflow: hidden;
+    margin: 48px auto;
+}
+
+footer ul {
+    padding-left: 0;
+    width: 1156px;
+    margin-bottom: 0;
+}
+
+footer .service li {
+    width: 228px;
+    float: left;
+    border-right: 1px solid #eaeaea;
+    padding: 24px 0 24px 60px;
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    box-sizing: content-box;
+}
+
+footer .service li h3 {
+    margin: 6px 0 6px 64px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fc5600;
+    line-height: 1em;
+}
+
+footer .service li p {
+    margin: 0 0 0 64px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+footer .guide {
+    width: 1154px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin: 24px auto;
+    border: 1px solid #eaeaea;
+    padding: 20px 0;
+}
+
+footer .guide ul {
+    width: 1156px;
+}
+
+footer .guide li {
+    width: 160px;
+    float: left;
+    border-right: 1px solid #eaeaea;
+    padding: 0 0 0 70px;
+    height: 110px;
+    list-style: none;
+    box-sizing: content-box;
+}
+
+footer .guide ul h3 {
+    height: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    margin-top: 0;
+}
+
+footer .guide ul p {
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+footer .guide ul p a {
+    color: #333;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+footer .guide .last {
+    width: 200px;
+    padding-left: 30px!important;
+    float: left;
+    border-right: 1px solid #eaeaea;
+    padding: 0 0 0 70px;
+    height: 110px;
+}
+
+footer .guide .last .c_Highlight {
+    color: #fc5600!important;
+}
+
+footer .guide a:hover {
+    color: #fc5600;
+}
+
+footer .guide .last .c_Highlight:hover {
+    color: red!important;
+}
+
+
+/* 底部 */
