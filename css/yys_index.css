@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 body {
     font-size: 12px;
 }
@@ -22,12 +22,14 @@ nav {
     float: left;
     padding-left: 6px;
     margin-top: 7px;
-    height: 23px;
+    height: 54px;
     z-index: 20;
 }
 
 nav .user-entry {
     position: relative;
+    display: block;
+    height: 30px!important;
 }
 
 #gamelist a {
@@ -60,7 +62,7 @@ nav .user-entry {
     position: absolute;
     top: 24px;
     left: -6px;
-    /* display: none; */
+    display: none;
     z-index: 10;
 }
 
@@ -90,6 +92,307 @@ nav .welcome a {
 
 nav .welcome a:hover {
     color: #fc5600
+}
+
+
+/* 定义模态对话框外面的覆盖层样式 */
+
+#modal-overlay {
+    visibility: hidden;
+    position: fixed;
+    /* 使用绝对定位或固定定位  */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.huibg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.6;
+}
+
+
+/* 模态框样式 */
+
+#modal-overlay .modal-data {
+    display: block;
+    visibility: inherit;
+    margin-left: -240px;
+    margin-top: -233px;
+    position: fixed;
+    background: #fff;
+    border: 1px solid #D5D5D5;
+    left: 50%;
+    top: 50%;
+    z-index: 500;
+    min-width: 480px;
+    max-width: 960px;
+    width: 480px;
+    opacity: 1!important;
+}
+
+.popup-cont {
+    padding: 24px;
+    height: 375px;
+    width: 432px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    position: relative;
+}
+
+.doclose {
+    background: #eee;
+    border-bottom: 1px solid #C2C2C2;
+    height: 42px;
+}
+
+.doclose span {
+    display: block;
+    float: left;
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 12px;
+}
+
+.doclose a {
+    position: absolute;
+    top: 2px;
+    right: 13px;
+    font-size: 22px;
+    color: #999;
+}
+
+.j-headimg {
+    padding: 0 0 17px;
+}
+
+.j-head {
+    font-size: 18px;
+    height: 38px;
+    line-height: 38px;
+    width: 49.9%!important;
+    float: left;
+    color: #8d8d8d;
+    border-bottom: solid 2px #ccc;
+}
+
+.popup-cont .active {
+    border-bottom: solid 2px #23b260;
+    color: #000;
+}
+
+#account-box {
+    padding-left: 44px;
+    padding-right: 44px;
+    font-size: 12px;
+    line-height: 44px;
+    position: relative;
+    border: 1px solid #c5cddb;
+    outline: #23b260;
+    margin-bottom: 20px;
+}
+
+#account-box .u-logo {
+    float: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    text-align: center;
+    padding: 0 5px 0 10px;
+    line-height: 44px;
+    z-index: 10;
+}
+
+#ren {
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    margin-top: 10px;
+    background: url(../index_img/webzj_cdn101_sprite_61fbe151ab715649c6b7c4ec39156201.png);
+    background-position: -251px -86px;
+}
+
+#suo {
+    display: inline-block;
+    width: 22px;
+    height: 24px;
+    margin-top: 10px;
+    background: url(../index_img/webzj_cdn101_sprite_61fbe151ab715649c6b7c4ec39156201.png);
+    background-position: -291px -86px;
+}
+
+#account-box input {
+    width: 100%!important;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 0;
+    color: #333;
+    border: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 1px 0;
+    outline: none;
+}
+
+#account-box input::placeholder {
+    color: #bbbbbb;
+}
+
+#anquan {
+    text-align: left;
+}
+
+#dun {
+    float: left;
+    width: 20px;
+    height: 16px;
+    background: url(../index_img/webzj_gjlogo2.png) 0px 0px no-repeat !important;
+}
+
+#lianjie {
+    float: left;
+    margin-left: 10px;
+}
+
+#anquan a {
+    color: #4aafe9;
+}
+
+#dodenglu {
+    display: block;
+    text-decoration: none;
+    cursor: default;
+    color: #D2FFE5;
+    background: #23b260;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    font-size: 18px;
+    border: none;
+}
+
+.miandenglu {
+    display: block;
+    width: 104px;
+    float: left;
+    border-right: solid 1px #ccc;
+    margin-right: 8px;
+    margin-top: -4px;
+}
+
+.forget {
+    float: left;
+    height: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #999;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.goreg {
+    color: #999;
+    cursor: pointer;
+    font-size: 12px;
+    float: right;
+    line-height: 16px;
+}
+
+.doc:hover {
+    color: #666666
+}
+
+#other {
+    text-align: left;
+}
+
+.otherlog {
+    width: 84px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+    color: #9fabbf;
+    display: block;
+    float: left;
+}
+
+.othertu {
+    height: 26px;
+    float: left;
+}
+
+.othera {
+    display: block;
+    margin: 0 4px;
+    cursor: pointer;
+    float: left;
+    width: 22px;
+    height: 26px;
+    background: url(../index_img/webzj_cdn101_sprite_61fbe151ab715649c6b7c4ec39156201.png);
+}
+
+.othera1 {
+    background-position: -217px -140px;
+}
+
+.othera2 {
+    background-position: -71px -140px;
+}
+
+.othera3 {
+    background-position: -376px -140px;
+}
+
+.othera1:hover {
+    background-position: -142px -140px;
+}
+
+.othera2:hover {
+    background-position: -2px -140px;
+}
+
+.othera3:hover {
+    background-position: -296px -140px;
+}
+
+.twocode {
+    width: 30px;
+    height: 30px;
+    background-position: -85px -255px;
+    float: right;
+    right: 0;
+    display: block;
+    bottom: inherit;
+    top: 0;
+}
+
+.floatL {
+    margin: 0px 0 0px 0px;
+    float: left;
+    color: #9fabbf;
+    font-size: 13px;
+    color: #9fabbf;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+}
+
+#corp_login {
+    font-size: 13px;
+    color: #333;
+}
+
+#corp_login:hover {
+    color: #fc5600;
 }
 
 nav .sub-link .user-entry {
@@ -144,6 +447,7 @@ nav .user-entry:hover .head {
     display: flex;
     align-items: center;
     float: left;
+    margin-left: -60px;
 }
 
 .container-top .row2 {
@@ -238,6 +542,10 @@ nav .user-entry:hover .head {
 
 /* 底部 */
 
+footer {
+    height: auto!important;
+}
+
 footer .service {
     width: 1154px;
     overflow: hidden;
@@ -261,6 +569,30 @@ footer .service li {
     box-sizing: content-box;
 }
 
+footer .icon-img {
+    width: 53px;
+    height: 53px;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+footer .icon-img1 {
+    background: url(../index_img/icon.less.png) -143px -1049px no-repeat;
+}
+
+footer .icon-img2 {
+    background: url(../index_img/icon.less.png) -88px -1049px no-repeat;
+}
+
+footer .icon-img3 {
+    background: url(../index_img/icon.less.png) -198px -1049px no-repeat;
+}
+
+footer .icon-img4 {
+    background: url(../index_img/icon.less.png) -253px -1049px no-repeat;
+}
+
 footer .service li h3 {
     margin: 6px 0 6px 64px;
     font-size: 18px;
@@ -282,6 +614,7 @@ footer .guide {
     margin: 24px auto;
     border: 1px solid #eaeaea;
     padding: 20px 0;
+    margin-top: 0;
 }
 
 footer .guide ul {

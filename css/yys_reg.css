@@ -1,0 +1,292 @@
+@charset "utf-8";
+body {
+    background: #efefef;
+}
+
+
+/* 头部 */
+
+header {
+    height: 130px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header .logo {
+    float: left;
+    width: 300px;
+    height: 60px;
+    margin-top: 35px;
+    background: url(../reg_img/sprite.png) no-repeat;
+    background-position: -50px -18px;
+}
+
+header .m-tr-block {
+    float: right;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+#btn_Login {
+    text-decoration: none;
+    color: #ca5252;
+}
+
+#btn_Login:hover {
+    color: #ad4747;
+}
+
+
+/* 主题 */
+
+section {
+    position: relative;
+    width: 1000px;
+    padding-bottom: 55px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 3px 3px #cbc9c9;
+    padding-bottom: 55px;
+}
+
+article {
+    height: 650px;
+}
+
+section .m-tab {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-bottom: 24px;
+}
+
+section .m-tab .left {
+    width: 158px;
+    border: solid 1px #ccc;
+    border-right: 0;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    box-sizing: content-box;
+}
+
+#rightBtn {
+    display: block;
+    width: 158px;
+    border: solid 1px #ccc;
+    border-left: 0;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+    position: relative;
+    text-decoration: none;
+    color: #666;
+    box-sizing: content-box;
+}
+
+#rightBtn p {
+    position: absolute;
+    font-size: 9px;
+    color: #fff;
+    background: #ca5252;
+    height: 12px;
+    line-height: 9px;
+    width: 26px;
+    top: 4px;
+    border-radius: 2px;
+    right: 12px;
+}
+
+section .m-tab .select {
+    background: #ca5252;
+    border-color: #ca5252;
+    color: #fff;
+}
+
+section .u-input {
+    position: relative;
+    float: left;
+    height: 72px;
+    width: 100%;
+    overflow: visible;
+    z-index: 12;
+}
+
+section .u-label {
+    float: left;
+    width: 340px;
+    text-align: right;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 45px;
+    color: #333;
+    cursor: default;
+    font-weight: 500;
+}
+
+section .i-inpt {
+    float: left;
+    height: 44px;
+    width: 280px;
+    padding: 0 0;
+    padding-right: 40px;
+    margin-top: 12px;
+    border: solid 1px #ddd;
+    font-size: 16px;
+    text-indent: 0.5em;
+    padding-left: 0;
+    line-height: 30px;
+    box-sizing: content-box;
+}
+
+section .i-inpt::placeholder {
+    color: #bbb;
+}
+
+section .u-note {
+    height: 22px;
+    line-height: 22px;
+    color: #999;
+}
+
+.yanzheng {
+    height: 44px!important;
+    padding: 0;
+}
+
+.yanzhengma {
+    height: 44px!important;
+    padding: 0!important;
+    margin: 0!important;
+}
+
+.yidun_tips {
+    text-align: center;
+    width: 318px;
+    height: 40px;
+    float: left;
+    background: linear-gradient(180deg, #fff 0, #ebedf0 87%);
+    border-radius: 2px;
+    position: relative;
+    border: 1px solid #e4e7eb;
+    cursor: pointer;
+}
+
+.yidun_tips__icon {
+    display: inline-block;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-image: url(../reg_img/icon_light.f0aea65.png);
+    background-position: 0 -152px;
+    background-size: 34px 494px;
+}
+
+.yidun_tips__text {
+    line-height: 44px;
+    text-align: center;
+    color: #45494c;
+    font-size: 14px;
+}
+
+#changephone {
+    cursor: pointer;
+    color: #4cb5ff;
+}
+
+#getps {
+    float: left;
+    height: 46px;
+    width: 120px;
+    font-size: 16px;
+    line-height: 46px;
+    margin: 12px 0 0 10px;
+    color: #fff;
+    background: #2c82ff;
+    text-align: center;
+}
+
+#getps:hover {
+    cursor: pointer;
+    background-color: #48a4ff;
+}
+
+#reg-btn {
+    float: left;
+    border: 0;
+    width: 322px;
+    height: 46px;
+    margin-top: 12px;
+    background-color: #ca5252;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    line-height: 46px;
+    cursor: pointer;
+}
+
+#reg-btn:hover {
+    background: #e66363;
+}
+
+.u-tips .tip {
+    margin-top: 10px;
+    color: #b1b1b1;
+    float: left;
+    width: 322px;
+    font-size: 12px;
+}
+
+.u-tips .u-agree {
+    cursor: pointer;
+}
+
+.u-tips a {
+    text-decoration: none;
+    color: #b1b1b1;
+    line-height: 20px;
+}
+
+.u-tips a:hover {
+    color: #666;
+}
+
+.download {
+    display: block;
+    position: initial;
+    margin: 0 auto;
+    width: 900px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+footer .m-cp {
+    padding: 30px 0;
+}
+
+footer .m-cp p {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #b1b1b1;
+}
+
+footer .m-cp p a {
+    color: #b1b1b1;
+    text-decoration: none;
+    padding: 0 6px;
+}
+
+footer .m-cp p a:hover {
+    color: #ee8c18;
+}
